@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GoodGoy → GoodGuy (GTG)</title>
+  <meta name="description" content="GoodGoy to GoodGuy (GTG) – Meme coin website." />
+  <link rel="canonical" href="https://example.com/" />
+
+  <!-- Social / SEO -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="GoodGoy → GoodGuy (GTG)" />
+  <meta property="og:description" content="GoodGoy to GoodGuy (GTG) – Meme coin website." />
+  <meta property="og:image" content="https://example.com/34057379-b028-49c1-a661-5708b81c1854.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="GoodGoy → GoodGuy (GTG)" />
+  <meta name="twitter:description" content="GoodGoy to GoodGuy (GTG) – Meme coin website." />
+  <meta name="twitter:image" content="https://example.com/34057379-b028-49c1-a661-5708b81c1854.png" />
+
+  <meta name="theme-color" content="#0b0b0f" />
+
+  <!-- Fonts (preconnect + load) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0b0b0f;
+      --primary: #facc15;
+      --secondary: #22c55e;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --card-bg: rgba(255,255,255,0.05);
+    }
+
+    /* Visually-hidden for accessibility (skip link, etc.) */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; }
+
+    body {
+      background: linear-gradient(180deg, #0b0b0f, #111827);
+      color: var(--text);
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    header {
+      padding: 20px 8%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    nav a { margin-left: 20px; color: var(--muted); font-weight:600; }
+    nav a:focus { outline: 3px solid rgba(250,204,21,0.25); border-radius:6px; }
+
+    section { min-height: 100vh; padding: 80px 8%; display: flex; align-items: center; }
+    main { display: block; }
+
+    h1, h2 { font-weight: 800; line-height: 1.1; }
+    h1 { font-size: clamp(3rem, 6vw, 5rem); }
+    h2 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 20px; }
+
+    p { font-size: 1.05rem; line-height: 1.6; color: var(--muted); max-width: 700px; }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 28px;
+      border-radius: 999px;
+      background: var(--primary);
+      color: #000;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 10px 30px rgba(250, 204, 21, 0.25);
+    }
+
+    .hero { justify-content: center; text-align: center; flex-direction: column; }
+    .hero .brand-highlight { color: var(--primary); }
+    .ticker { margin-top: 20px; font-weight: 700; letter-spacing: 2px; color: var(--secondary); }
+
+    .story { justify-content: space-between; gap: 60px; flex-wrap: wrap; }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 20px;
+      padding: 40px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+      max-width: 600px;
+    }
+
+    .tokenomics { flex-direction: column; text-align: center; }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+      width: 100%;
+      max-width: 900px;
+    }
+
+    .stat {
+      background: rgba(255,255,255,0.03);
+      padding: 24px;
+      border-radius: 16px;
+    }
+
+    .stat h3 { color: var(--primary); font-size: 1.25rem; margin-bottom: 8px; }
+
+    .buy { flex-direction: column; text-align: center; }
+
+    .steps {
+      margin-top: 24px;
+      max-width: 800px;
+      text-align: left;
+      list-style: decimal;
+      padding-left: 1.2rem;
+    }
+
+    .steps li {
+      margin-bottom: 14px;
+      font-size: 1rem;
+      color: var(--muted);
+    }
+
+    footer {
+      padding: 40px 8%;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+
+    footer span { color: var(--primary); }
+
+    .hero-figure {
+      margin-top: 28px;
+      max-width: 420px;
+      width: 100%;
+      border-radius: 24px;
+      box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+      overflow: hidden;
+    }
+
+    .contract {
+      display:flex;
+      gap:8px;
+      align-items:center;
+      margin-top:12px;
+      flex-wrap:wrap;
+    }
+
+    .contract .addr {
+      background: rgba(255,255,255,0.03);
+      padding: 10px 12px;
+      border-radius:10px;
+      font-family: monospace;
+      color: var(--muted);
+    }
+
+    .copy-btn {
+      background: rgba(255,255,255,0.06);
+      border: none;
+      color: var(--text);
+      padding: 10px 12px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      section { padding: 60px 6%; }
+      header { padding: 12px 6%; }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Skip link for keyboard users -->
+  <a class="sr-only" href="#main-content">Skip to content</a>
+
+  <header>
+    <div>
+      <strong>Good<span style="color:var(--primary)">Goy</span> → Good<span style="color:var(--primary)">Guy</span></strong>
+    </div>
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#story">Story</a>
+      <a href="#tokenomics">Tokenomics</a>
+      <a href="#buy">Buy</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- HERO -->
+    <section class="hero" id="home" aria-labelledby="hero-heading">
+      <h1 id="hero-heading">Good<span class="brand-highlight">Goy</span> → Good<span class="brand-highlight">Guy</span></h1>
+      <p style="margin-top:20px;">
+        Once labeled a <strong>GoodGoy</strong>, now embraced as a <strong>GoodGuy</strong>.<br>
+        A tongue-in-cheek meme coin celebrating the internet’s favorite redemption arc.
+      </p>
+
+      <figure class="hero-figure" aria-hidden="false">
+        <img
+          src="34057379-b028-49c1-a661-5708b81c1854.png"
+          alt="GTG Coin Art"
+          loading="lazy"
+          style="width:100%; height:auto; display:block;"
+        />
+        <figcaption class="sr-only">GTG coin art</figcaption>
+      </figure>
+
+      <div class="ticker" aria-live="polite">Ticker: $GTG</div>
+      <a href="#buy" class="btn" role="button" aria-label="Buy GTG">Buy $GTG</a>
+    </section>
+
+    <!-- STORY -->
+    <section class="story" id="story" aria-labelledby="story-heading">
+      <div class="card" role="article" aria-labelledby="story-heading-1">
+        <h2 id="story-heading-1">The Meme</h2>
+        <p>
+          Every cycle needs a story. <strong>GoodGoy → GoodGuy</strong> is about the ultimate meme transformation.
+          Once doubted. Once laughed at. Now embraced by the timeline.
+        </p>
+      </div>
+
+      <div class="card" role="article" aria-labelledby="story-heading-2">
+        <h2 id="story-heading-2">Why $GTG?</h2>
+        <p>
+          Because memes move markets. Because redemption arcs print.
+          Because being early feels better when it’s funny.
+          <br><br>
+          No promises. No suits. Just culture.
+        </p>
+      </div>
+    </section>
+
+    <!-- TOKENOMICS -->
+    <section class="tokenomics" id="tokenomics" aria-labelledby="tokenomics-heading">
+      <h2 id="tokenomics-heading">Tokenomics</h2>
+      <p>Simple. Clean. Meme-ready.</p>
+
+      <div class="stats" role="list">
+        <div class="stat" role="listitem"><h3>Supply</h3><p>1,000,000,000 GTG</p></div>
+        <div class="stat" role="listitem"><h3>Taxes</h3><p>0% Buy / 0% Sell</p></div>
+        <div class="stat" role="listitem"><h3>Liquidity</h3><p>Burned 🔥</p></div>
+        <div class="stat" role="listitem"><h3>Ownership</h3><p>Renounced ✅</p></div>
+      </div>
+
+      <!-- Contract copy area (replace placeholder with actual contract) -->
+      <div style="margin-top:18px;">
+        <label style="display:block; color:var(--muted); font-weight:600; margin-bottom:8px;">Contract address</label>
+        <div class="contract" aria-live="polite">
+          <div class="addr" id="contractAddress">0x0000000000000000000000000000000000000000</div>
+          <button class="copy-btn" id="copyBtn" aria-label="Copy contract address">Copy</button>
+          <div id="copyStatus" style="color:var(--muted); font-size:0.95rem;"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW TO BUY -->
+    <section class="buy" id="buy" aria-labelledby="buy-heading">
+      <h2 id="buy-heading">How to Buy</h2>
+      <p>Don’t overthink it.</p>
+
+      <ol class="steps" aria-label="How to buy steps">
+        <li>Download a wallet (MetaMask / Phantom).</li>
+        <li>Fund it with ETH or SOL.</li>
+        <li>Go to your favorite DEX.</li>
+        <li>Paste the $GTG contract address (use the copy button above).</li>
+        <li>Swap, hold, and post memes.</li>
+      </ol>
+
+      <a href="#home" class="btn">Back to Top</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 <span>GoodGoy → GoodGuy</span> | $GTG</p>
+    <p>This is a meme coin. No financial advice. Just memes.</p>
+  </footer>
+
+  <script>
+    // Copy contract address to clipboard (progressive enhancement)
+    (function () {
+      const copyBtn = document.getElementById('copyBtn');
+      const contractEl = document.getElementById('contractAddress');
+      const statusEl = document.getElementById('copyStatus');
+
+      copyBtn && copyBtn.addEventListener('click', function () {
+        const text = contractEl.textContent.trim();
+        if (!navigator.clipboard) {
+          // fallback
+          const ta = document.createElement('textarea');
+          ta.value = text;
+          document.body.appendChild(ta);
+          ta.select();
+          try {
+            document.execCommand('copy');
+            statusEl.textContent = 'Copied to clipboard';
+          } catch (err) {
+            statusEl.textContent = 'Copy failed';
+          }
+          ta.remove();
+          return;
+        }
+        navigator.clipboard.writeText(text).then(function () {
+          statusEl.textContent = 'Copied to clipboard';
+          setTimeout(() => statusEl.textContent = '', 3000);
+        }, function () {
+          statusEl.textContent = 'Copy failed';
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
